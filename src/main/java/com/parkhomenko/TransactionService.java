@@ -20,6 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class TransactionService {
     
+    private static final int MAX_AMOUNT_LEGTH = 19;
     private static DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
     
     @Autowired
@@ -79,8 +80,12 @@ public class TransactionService {
             throw new TransactionException(ErrorCode.INVALID_ORGANIZATION_ERROR);
         }
         
-        if(dto.amount.compareTo(BigDecimal.ZERO) == 0) {
+        if(dto.amount == null || dto.amount.compareTo(BigDecimal.ZERO) == 0) {
             throw new TransactionException(ErrorCode.ZERO_AMOUNT_ERROR);
+        }
+
+	if(dto.amount.toPlainString().length() > MAX_AMOUNT_LEGTH) {
+            throw new TransactionException(ErrorCode.VERY_BIG_DEBET_ERROR);
         }
         
         if(dto.isCredit) {

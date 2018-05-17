@@ -18,7 +18,8 @@ import {get, post} from './backend';
 const ERROR_MAPPING_LOCALIZATION = {
     ZERO_AMOUNT_ERROR: 'Fail: transaction amount is zero!',
     NEGATIVE_AMOUNT_SYSTEM_ERROR: 'Fail: the amount of money on the account is not enough to process this transaction',
-    INVALID_ORGANIZATION_ERROR: 'Fail: organization from your transaction is not exist'
+    INVALID_ORGANIZATION_ERROR: 'Fail: organization from your transaction is not exist',
+    VERY_BIG_DEBET_ERROR: 'Fail: debit transaction amount is too big, try less amount'
 };
 
 const styles = theme => ({
