@@ -1,0 +1,28 @@
+{
+  "name": "money-account-application",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.42",
+    "create-react-class": "^15.6.3",
+    "es6-promise": "^4.2.4",
+    "isomorphic-fetch": "^2.2.1",
+    "material-ui": "next",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-number-format": "latest",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
