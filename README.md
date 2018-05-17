@@ -16,10 +16,17 @@ So please add Web Page with methods for sending transactions and display history
 
 ### Please develop application in local git repository. Commit as you normally do.
 
-## Build & Run:
+## Build & Run server part:
 1) cd project_folder_here
 2) mvn clean install
 3) java -jar ./target/money-account-application-0.1.0.jar
+
+## Build & Run frontend part:
+1) cd project_folder_here
+2) cd ui
+3) npm install
+4) npm start
+5) Open your favorite browser with URL: http://localhost:3000
 
 ## API documentation
 URL: http://localhost:8080/app/swagger-ui.html
