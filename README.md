@@ -14,8 +14,6 @@ In general the App will be used programmatically via its RESTful API.
 Additionally our team lead wants to perform some transactions via Web UI. He likes RIA application design very much so try to use some modern, nasty JS framework for it.
 So please add Web Page with methods for sending transactions and display history list. It's better to have some color coding for credit and debit transactions.
 
-### Please develop application in local git repository. Commit as you normally do.
-
 ## Build & Run server part:
 1) cd project_folder_here
 2) mvn clean install
